@@ -1,0 +1,94 @@
+
+/* Общий стиль для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Заголовок и контейнер для голосования */
+h2 {
+    color: #4caf50;
+}
+
+.vote-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+
+}
+
+/* Кастомные радио-кнопки */
+.radio-group label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group label:hover {
+    background-color: #c8e6c9;
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background-color: #a5d6a7;
+    font-weight: bold;
+}
+
+/* Стиль для кнопки отправки */
+.submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Стиль для результатов */
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.progress-bar {
+    height: 20px;
+    border-radius: 5px;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    transition: width 0.4s ease;
+}
+
+.result-text {
+    margin-top: 15px;
+    font-weight: bold;
+}
